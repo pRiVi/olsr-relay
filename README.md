@@ -1,10 +1,14 @@
 OSLR UDP Broadcast Packet Relay
 ===============================
 
-This program listens for packets on a specified UDP broadcast port. When
-a packet is received, it sends that packet to all specified interfaces
-but the one it came from as though it originated from the original
-sender. This is usefull for the following use case:
+This program listens for packets on a specified UDP port on the IPv4
+Broadcast address (255.255.255.255). When a packet is received, it
+sends that packet to all specified interfaces but the one it came
+from as though it originated from the original sender, which is
+needed if you want transparently transfer oslr connections over
+a node.
+
+For details see the following description.
 
 Transparent OLSR
 ----------------
