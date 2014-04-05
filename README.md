@@ -14,6 +14,29 @@ It also works on ppp links, so you can log in from windows boxes (e.g.
 using pptp) and play LAN-based games together. Currently, you have to
 care about upcoming or downgoing interfaces yourself.
 
+OLSR
+----
+
+If you want to have an olsr link briged, means a transparent point not
+seen on your plan, you have on many systems the problem that wlan
+interfaces cannot be bridged. You realise this with a combination of
+proxy arp, but the olsrd packets won't get forwarded. With this tool
+you can fix this the following way:
+
+  echo 1 > /proc/sys/net/ipv4/conf/wlan0/proxy_arp 
+  echo 1 > /proc/sys/net/ipv4/conf/eth0/proxy_arp 
+  echo 1 > /proc/sys/net/ipv4/conf/eth1/proxy_arp 
+  ...
+  echo 1 > /proc/sys/net/ipv4/ip_forward
+  /root/udp-broadcast-relay/udp-broadcast-relay -f 1 698 eth0 eth1 ...
+
+For example if you have a interface wlan0 and eth0 you do:
+
+  echo 1 > /proc/sys/net/ipv4/conf/wlan0/proxy_arp 
+  echo 1 > /proc/sys/net/ipv4/conf/eth0/proxy_arp 
+  echo 1 > /proc/sys/net/ipv4/ip_forward
+  /root/udp-broadcast-relay/udp-broadcast-relay -f 1 698 wlan0 eth0
+
 INSTALL
 -------
 
@@ -67,6 +90,10 @@ BUGS/CRITICISM/PATCHES/ETC
 
 HISTORY
 -------
+
+*   0.4 2014-04-05
+
+    Support for redirecting OLSR packets
 
 *   0.3 2003-09-28
 
