@@ -57,12 +57,12 @@ original sender.
 COMPATIBILITY
 -------------
 
--   I run debian woody with Linux 2.4.20, and here it works.
+-   Linux 2.4.x or later is enough.
 
 EXAMPLE
 -------
 
-    /some/where/udp-broadcast-relay -f 1 6112 eth0 eth1  # forward Warcraft 3 broadcast packets
+    /some/where/udp-broadcast-relay -f 1 698 wlan0 eth0  # Forwards OSLR packets between wlan0 and eth0
 
 CONTRIBUTORS
 -----------------
@@ -113,19 +113,7 @@ HISTORY
 CREDITS
 -------
 
-This is based upon [udp_broadcast_fw](http://www.serverquery.com/udp_broadcast_fw/) by Nathan O'Sullivan.
-
-HISTORY of udp_broadcast_fw
----------------------------
-
-*   0.1.1 - 19 Feb 02
-
-    Moved fork() code to just before main loop so that errors would
-    appear
-
-*   0.1 - 18 Feb 02
-
-    Initial release
+This is based upon [udp_broadcast_fw](http://www.serverquery.com/udp_broadcast_fw/) by Nathan O'Sullivan and a fork of Joachim Breitner(http://www.joachim-breitner.de/udp-broadcast-relay/).
 
 LICENSE
 -------
