@@ -23,19 +23,19 @@ interfaces cannot be bridged. You realise this with a combination of
 proxy arp, but the olsrd packets won't get forwarded. With this tool
 you can fix this the following way:
 
-  echo 1 > /proc/sys/net/ipv4/conf/wlan0/proxy_arp 
-  echo 1 > /proc/sys/net/ipv4/conf/eth0/proxy_arp 
-  echo 1 > /proc/sys/net/ipv4/conf/eth1/proxy_arp 
-  ...
-  echo 1 > /proc/sys/net/ipv4/ip_forward
-  /root/udp-broadcast-relay/udp-broadcast-relay -f 1 698 eth0 eth1 ...
+    echo 1 > /proc/sys/net/ipv4/conf/wlan0/proxy_arp 
+    echo 1 > /proc/sys/net/ipv4/conf/eth0/proxy_arp 
+    echo 1 > /proc/sys/net/ipv4/conf/eth1/proxy_arp 
+    ...
+    echo 1 > /proc/sys/net/ipv4/ip_forward
+    /some/where/udp-broadcast-relay -f 1 698 eth0 eth1 ...
 
 For example if you have a interface wlan0 and eth0 you do:
 
-  echo 1 > /proc/sys/net/ipv4/conf/wlan0/proxy_arp 
-  echo 1 > /proc/sys/net/ipv4/conf/eth0/proxy_arp 
-  echo 1 > /proc/sys/net/ipv4/ip_forward
-  /root/udp-broadcast-relay/udp-broadcast-relay -f 1 698 wlan0 eth0
+    echo 1 > /proc/sys/net/ipv4/conf/wlan0/proxy_arp 
+    echo 1 > /proc/sys/net/ipv4/conf/eth0/proxy_arp 
+    echo 1 > /proc/sys/net/ipv4/ip_forward
+    /some/where/udp-broadcast-relay -f 1 698 wlan0 eth0
 
 INSTALL
 -------
