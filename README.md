@@ -13,12 +13,17 @@ For details see the following description.
 Transparent OLSR
 ----------------
 
-If you want to have an olsr link briged, means a transparent point not
-seen on your plan, you have on many systems the problem that wlan
-interfaces cannot be bridged. You can realise the same with proxy arp,
-a similary thing to bridging. The problem is that via this way the
-olsr broadcasts won't get forwarded. Via this tool you can resolve
-this problem the following way:
+If you want to have an olsr link briged, means a relay not seen as
+a oslr hop, you have on many systems the problem that wlan interfaces
+cannot be bridged. You can realise the same with proxy arp, a similary
+thing to bridging. The problem is that via this way the olsr broadcasts
+won't get forwarded.
+
+The benefit of proxy-arp instead of bridging is, that no broadcasts but
+oslrd is flooded through the link. Beside of the broadcasts you have
+the full functionality of bridging.
+
+Via this tool you can resolve this problem the following way:
 
     echo 1 > /proc/sys/net/ipv4/conf/wlan0/proxy_arp 
     echo 1 > /proc/sys/net/ipv4/conf/eth0/proxy_arp 
