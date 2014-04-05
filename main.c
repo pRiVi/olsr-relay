@@ -390,7 +390,9 @@ int main(int argc,char **argv)
 			if (ifs[x].ifindex == rcv_ifindex) continue; /* no bounces, please */
 
 			/* Set destination addr ip - port is set already */
-			bcopy(&(ifs[x].dstaddr.sin_addr.s_addr),(gram+16),4);	
+                        //bcopy(&(ifs[x].dstaddr.sin_addr.s_addr),(gram+16),4);
+                        unsigned long addr = 0xFFFFFFFF;
+                        bcopy(&addr,(gram+16),4);
 
 			DPRINT ("Sent to %s:%d on interface %i\n",
 				inet_ntoa(ifs[x].dstaddr.sin_addr), /* dst ip */
