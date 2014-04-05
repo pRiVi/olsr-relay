@@ -23,7 +23,7 @@ The benefit of proxy-arp instead of bridging is, that no broadcasts but
 oslrd is flooded through the link. Beside of the broadcasts you have
 the full functionality of bridging.
 
-Via this tool you can resolve this problem the following way:
+On your linux you can do this the following way:
 
     echo 1 > /proc/sys/net/ipv4/conf/wlan0/proxy_arp 
     echo 1 > /proc/sys/net/ipv4/conf/eth0/proxy_arp 
