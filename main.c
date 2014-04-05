@@ -7,7 +7,7 @@ olsr-relay
 
 Copyright (c) 2014 Markus Schräder <oslrrelay2014@priv.de>
 
-Based upon:
+Forked from:
 udp-broadcast-relay
 	Relays UDP broadcasts to other networks, forging
 	the sender address.
