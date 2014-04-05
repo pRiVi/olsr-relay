@@ -1,5 +1,13 @@
 /*
 ******************************************************************
+
+olsr-relay
+	olsr relay to have transparent olsr relays over proxy-arp
+	instead of bridging
+
+Copyright (c) 2014 Markus Schräder <oslrrelay2014@priv.de>
+
+Based upon:
 udp-broadcast-relay
 	Relays UDP broadcasts to other networks, forging
 	the sender address.
