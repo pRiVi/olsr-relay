@@ -85,9 +85,9 @@ Thanks to all contributors!
 BUGS/CRITICISM/PATCHES/ETC
 --------------------------
 
--   Web: <http://www.joachim-breitner.de/udp-broadcast-relay/>
--   e-mail:   Joachim Breitner <<mail@joachim-breitner.de>>
--   Github: <https://github.com/nomeata/udp-broadcast-relay/>
+-   Web: <http://projekte.priv.de/>
+-   e-mail:  Markus Schräder <<olsrudpbroadcast2014@priv.de>>
+-   Github: <https://github.com/pRiVi/udp-broadcast-relay/>
 
 HISTORY
 -------
