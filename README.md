@@ -19,7 +19,7 @@ won't get forwarded.
 
 The benefit of proxy-arp instead of bridging is, that no broadcasts but
 oslrd is flooded through the link. Beside of the broadcasts you have
-the full functionality of bridging.
+the full functionality as on bridging.
 
 On your linux you can do this the following way:
 
