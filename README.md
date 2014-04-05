@@ -1,21 +1,13 @@
-UDP Broadcast Packet Relay
-==========================
+OSLR UDP Broadcast Packet Relay
+===============================
 
 This program listens for packets on a specified UDP broadcast port. When
 a packet is received, it sends that packet to all specified interfaces
 but the one it came from as though it originated from the original
-sender.
+sender. This is usefull for the following use case:
 
-The primary purpose of this is to allow games on machines on separated
-local networks (Ethernet, WLAN) that use udp broadcasts to find each
-other to do so.
-
-It also works on ppp links, so you can log in from windows boxes (e.g.
-using pptp) and play LAN-based games together. Currently, you have to
-care about upcoming or downgoing interfaces yourself.
-
-OLSR
-----
+Transparent OLSR
+----------------
 
 If you want to have an olsr link briged, means a transparent point not
 seen on your plan, you have on many systems the problem that wlan
