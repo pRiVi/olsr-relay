@@ -113,7 +113,7 @@ HISTORY
 CREDITS
 -------
 
-This is based upon [udp_broadcast_fw](http://www.serverquery.com/udp_broadcast_fw/) by Nathan O'Sullivan and a fork of Joachim Breitner(http://www.joachim-breitner.de/udp-broadcast-relay/).
+This is based upon [udp_broadcast_fw](http://www.serverquery.com/udp_broadcast_fw/) by Nathan O'Sullivan and a [fork](http://www.joachim-breitner.de/udp-broadcast-relay/) by Joachim Breitner.
 
 LICENSE
 -------
