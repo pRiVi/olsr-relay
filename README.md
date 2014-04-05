@@ -8,8 +8,6 @@ from as though it originated from the original sender, which is
 needed if you want transparently transfer oslr connections over
 a node.
 
-For details see the following description.
-
 Transparent OLSR
 ----------------
 
@@ -88,7 +86,7 @@ BUGS/CRITICISM/PATCHES/ETC
 
 -   Web: <http://projekte.priv.de/>
 -   e-mail:  Markus Schräder <<olsrudpbroadcast2014@priv.de>>
--   Github: <https://github.com/pRiVi/udp-broadcast-relay/>
+-   Github: <https://github.com/pRiVi/olsr-relay>
 
 HISTORY
 -------
