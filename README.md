@@ -19,9 +19,10 @@ OLSR
 
 If you want to have an olsr link briged, means a transparent point not
 seen on your plan, you have on many systems the problem that wlan
-interfaces cannot be bridged. You realise this with a combination of
-proxy arp, but the olsrd packets won't get forwarded. With this tool
-you can fix this the following way:
+interfaces cannot be bridged. You can realise the same with proxy arp,
+a similary thing to bridging. The problem is that via this way the
+olsr broadcasts won't get forwarded. Via this tool you can resolve
+this problem the following way:
 
     echo 1 > /proc/sys/net/ipv4/conf/wlan0/proxy_arp 
     echo 1 > /proc/sys/net/ipv4/conf/eth0/proxy_arp 
